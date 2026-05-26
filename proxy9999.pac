@@ -1,4 +1,4 @@
 function FindProxyForURL(url, host)
 {
-    return "PROXY 127.0.0.1:9999";
+    return "SOCKS5 127.0.0.1:9999";
 }
