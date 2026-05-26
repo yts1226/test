@@ -1,4 +1,7 @@
 function FindProxyForURL(url, host)
 {
-    return "PROXY 127.0.0.1:9999";
+    if (host == "eoa.bj-fanuc.com.cn")
+        return "SOCKS5 192.168.133.11:10986";
+
+    return "DIRECT";
 }
